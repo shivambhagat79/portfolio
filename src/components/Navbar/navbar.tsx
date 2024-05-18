@@ -7,7 +7,7 @@ const againstFont = localFont({
 
 export default function Navbar() {
   return (
-    <nav className="w-screen border-b-2 border-black px-60 py-5">
+    <nav className="w-screen border-b-2 border-black px-60 py-5 z-50">
       <div className="flex justify-between">
         <div className={`${againstFont.className} font-bold text-xl`}>
           Welcome

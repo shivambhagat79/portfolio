@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "@/components/Footer/footer";
 
-const poppins = Poppins({
+const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   weight: "400",
 });
@@ -21,14 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={roboto_mono.className}>
         <AnimatedCursor
-          innerSize={6}
-          outerSize={24}
+          innerSize={8}
+          outerSize={36}
           color="6, 143, 111"
           outerAlpha={0.0}
           innerScale={0.9}
-          outerScale={2}
+          outerScale={3}
           outerStyle={{
             border: "2px solid rgba(6, 143, 111, 0.5)",
           }}

@@ -1,19 +1,22 @@
-import localFont from "next/font/local";
+import { Major_Mono_Display } from "next/font/google";
 import Link from "./link";
 
-const againstFont = localFont({
-  src: "../../../public/fonts/against regular.ttf",
+const major_mono = Major_Mono_Display({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export default function Navbar() {
   return (
-    <nav className="w-screen border-b-2 border-black px-60 py-5 z-50">
-      <div className="flex justify-between">
-        <div className={`${againstFont.className} font-bold text-xl`}>
+    <nav className="w-screen border-b-2 border-black px-60 py-2 z-50">
+      <div className="flex justify-between items-center">
+        <div
+          className={`${major_mono.className} font-bold text-4xl bg-black text-white px-4 py-2`}
+        >
           Welcome
         </div>
         <div className="nav-links">
-          <Link url="/home">Home</Link>
+          <Link url="/">Home</Link>
           <Link url="/about">About</Link>
           <Link url="/gallery">Gallery</Link>
           <Link url="/resume">Resume</Link>

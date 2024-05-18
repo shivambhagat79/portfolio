@@ -8,7 +8,7 @@ export default function Link({
   return (
     <a
       href={url}
-      className="p-4 mx-2 border-transparent border-2 transition-all border-white hover:border-teal-700 hover:p-2"
+      className="px-6 py-2 mx-2 border-2 transition-all border-black hover:bg-black hover:text-white hover:px-2 hover:py-1"
     >
       {children}
     </a>

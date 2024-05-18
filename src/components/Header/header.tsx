@@ -1,10 +1,9 @@
 "use client";
 
-import localFont from "next/font/local";
+import { Major_Mono_Display } from "next/font/google";
 import React from "react";
 import { SparklesCore } from "@/components/ui/particles";
 import Navbar from "../Navbar/navbar";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSmileWink,
@@ -12,19 +11,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ArrowRight from "../Icons/arrowRIght";
 
-const againstFont = localFont({
-  src: "../../../public/fonts/against regular.ttf",
+const major_mono = Major_Mono_Display({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export default function Header() {
-  const [time, settime] = useState(new Date().toLocaleTimeString());
-
-  setInterval(() => {
-    settime(new Date().toLocaleTimeString());
-  }, 60 * 1000);
-
   return (
-    <div className="h-screen w-screen ">
+    <div className="h-screen w-screen text-lg border-b-2 border-black">
       <Navbar />
       <div className="w-full absolute inset-0 h-screen -z-10">
         <SparklesCore
@@ -40,34 +34,31 @@ export default function Header() {
       <div className="w-full h-5/6 px-60 flex justify-center items-center">
         <div className="w-full">
           <div className="w-full pb-4 flex border-b-2 border-black justify-between">
-            <div>
-              Based in{"  "}
-              <span className={`${againstFont.className} font-bold`}>
-                Punjab
-              </span>
-              {"  "}
+            <div className="border-2 border-black px-4 py-2">
+              Based in Punjab{"  "}
               <ArrowRight />
               {"  "}
-              {time}
+              India
             </div>
-            <div>
+            <div className="bg-black text-white px-4 py-2">
               Status <ArrowRight />
               {"  "}
-              <span className=" font-extrabold">Open to work</span>
+              <span>Open to Work</span>
             </div>
           </div>
-          <div className={`${againstFont.className} text-8xl mt-9 mb-24`}>
-            Hi, this is Shivam.
+          <div className={`${major_mono.className} text-8xl mt-9 mb-24`}>
+            Hi, This Is Shivam.
           </div>
-          <div className="mb-5">
+          <div className="mb-5 bg-black inline-block text-white px-4 py-2">
             Currently <ArrowRight />{" "}
             <span className=" font-extrabold">IIT Ropar, C.S.E.</span>
           </div>
-          <div>
+          <div></div>
+          <div className="mb-5 bg-black inline-block text-white px-4 py-2">
             Delivering <ArrowRight />{" "}
             <span className=" font-extrabold">Smiles</span>
             {"  "}
-            <FontAwesomeIcon icon={faSmileWink} className="text-teal-700" />
+            <FontAwesomeIcon icon={faSmileWink} className="text-teal-500" />
           </div>
         </div>
       </div>

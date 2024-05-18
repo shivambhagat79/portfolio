@@ -25,7 +25,7 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
   display: block;
   width: var(--bubble-radius);
   height: var(--bubble-radius);
-  border-radius: 50%;
+  // border-radius: 50%;
   animation: float-up var(--bubble-float-duration) var(--bubble-float-delay)
     ease-in infinite;
 

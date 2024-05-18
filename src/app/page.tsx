@@ -1,6 +1,10 @@
+import Header from "@/components/Header/header";
+
 export default function Home() {
-  // new kursor({
-  //   type: 1,
-  // });
-  return <main className=""></main>;
+  return (
+    <>
+      <Header />
+      <div className="h-60"></div>
+    </>
+  );
 }

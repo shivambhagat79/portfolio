@@ -6,11 +6,10 @@ import Footer from "@/components/Footer/footer";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
-  weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: "Shivam Bhagat",
+  title: "Shivam's Playground",
   description: "A personal portfolio website for Shivam Bhagat.",
 };
 

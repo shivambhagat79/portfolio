@@ -1,11 +1,17 @@
-import Footer from "@/components/Footer/footer";
+"use client";
+
 import Header from "@/components/Header/header";
+import About from "@/components/sections/About/about";
+import Experience from "@/components/sections/Experience/experience";
+import Projects from "@/components/sections/Projects/projects";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="h-60"></div>
+      <About />
+      <Experience />
+      <Projects />
     </>
   );
 }

@@ -1,11 +1,19 @@
 "use client";
 
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Footer() {
   return (
     <footer className="w-screen px-60 py-20 border-t-2 border-black text-lg ">
       <div className=" text-end pb-10 border-b-2 border-black">
-        <div className="px-4 py-2 border-2 inline-block border-black">
-          Found my 生きがい
+        <div className="flex justify-between items-center">
+          <div className="text-xl">
+            <FontAwesomeIcon icon={faCopyright} /> Shivam Bhagat 2024
+          </div>
+          <div className="px-4 py-2 border-2 inline-block border-black">
+            Found my 生きがい
+          </div>
         </div>
         <div className="my-4">Always learning, Open to critique.</div>
         <div className=" bg-black inline-block text-white px-4 py-2">

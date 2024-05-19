@@ -10,6 +10,7 @@ import {
   faAngleDoubleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import ArrowRight from "../Icons/arrowRIght";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -47,7 +48,7 @@ export default function Header() {
             </div>
           </div>
           <div className={`${major_mono.className} text-8xl mt-9 mb-24`}>
-            Hi, This Is Shivam.
+            <TextGenerateEffect words="Hi, this is Shivam" />
           </div>
           <div className="mb-5 bg-black inline-block text-white px-4 py-2">
             Currently <ArrowRight />{" "}

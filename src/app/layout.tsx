@@ -21,20 +21,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto_mono.className}>
+      <body
+        className={`${roboto_mono.className} bg-gradient-to-l from-emerald-800 via-gray-50 to-slate-50`}
+      >
         <AnimatedCursor
           innerSize={8}
           outerSize={36}
-          color="6, 143, 111"
+          color="0,0,0"
           outerAlpha={0.0}
           innerScale={0.9}
           outerScale={3}
           outerStyle={{
-            border: "2px solid rgba(6, 143, 111, 0.5)",
+            border: "2px solid rgba(6, 143, 111, 0.9)",
           }}
         />
         {children}
-
         <Footer />
       </body>
     </html>

@@ -1,7 +1,7 @@
 import Title from "@/components/ui/title";
 
-import { HoverEffect } from "@/components/ui/projects-card-group";
 import { projects } from "../../../../public/data/projects/projects";
+import { HoverEffect } from "./projects-card-group";
 
 export default function Projects() {
   return (

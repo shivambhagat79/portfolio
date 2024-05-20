@@ -69,7 +69,7 @@ export default function Footer() {
             <a
               href="https://github.com/shivambhagat79"
               target="_blank"
-              className="text-teal-200 hover:text-teal-500 transition-all hover:underline"
+              className="text-teal-700 hover:text-teal-900 transition-all hover:underline"
             >
               GitHub
             </a>

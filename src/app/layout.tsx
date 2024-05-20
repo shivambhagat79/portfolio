@@ -3,6 +3,7 @@ import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "@/components/Footer/footer";
+import { cn } from "@/utils/cn";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
@@ -20,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto_mono.className} bg-gradient-to-l from-emerald-800 via-gray-50 to-slate-50`}
-      >
+      <body className={cn(roboto_mono.className, "bg-stone-100")}>
         <AnimatedCursor
           innerSize={8}
           outerSize={36}

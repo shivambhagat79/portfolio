@@ -9,6 +9,8 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    duration: string;
+    organisation: string;
     description: string;
     link: string;
   }[];
@@ -34,7 +36,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-black block"
+                className="absolute inset-0 border-2 border-black h-full w-full  block"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,6 +52,8 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
+            <CardDuration>{item.duration}</CardDuration>
+            <CardOrganisation>{item.organisation}</CardOrganisation>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
@@ -68,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "h-full w-full p-4 overflow-hidden border-2 border-black group-hover:border-zinc-100 group-hover:text-white relative z-20 transition-all duration-1000",
+        "h-full w-full p-4 bg-stone-900 group-hover:bg-transparent overflow-hidden border-2 border-transparent group-hover:border-black group-hover:text-white relative z-20 transition-all duration-700",
         className
       )}
     >
@@ -88,7 +92,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-black group-hover:text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-1000",
+        "group-hover:text-black text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-700",
         className
       )}
     >
@@ -96,6 +100,7 @@ export const CardTitle = ({
     </h4>
   );
 };
+
 export const CardDescription = ({
   className,
   children,
@@ -106,7 +111,45 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-black group-hover:text-white tracking-wide leading-relaxed text-md transition-all duration-1000",
+        "mt-4 group-hover:text-black text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+
+export const CardOrganisation = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-4 font-bold group-hover:text-black text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+
+export const CardDuration = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-1 group-hover:text-black text-stone-400 tracking-wide leading-relaxed text-sm transition-all duration-700",
         className
       )}
     >

@@ -9,6 +9,8 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    time: string;
+    techStack: string;
     description: string;
     link: string;
   }[];
@@ -34,7 +36,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 border-2 border-black h-full w-full  block"
+                className="absolute inset-0 h-full w-full bg-stone-900 block"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,7 +52,9 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
+            <CardTime>{item.time}</CardTime>
             <CardDescription>{item.description}</CardDescription>
+            <CardTechStack>{item.techStack}</CardTechStack>
           </Card>
         </Link>
       ))}
@@ -68,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "h-full w-full p-4 bg-black group-hover:bg-transparent overflow-hidden border-2 border-transparent group-hover:border-black group-hover:text-white relative z-20 transition-all duration-1000",
+        "h-full w-full p-4 overflow-hidden border-2 border-black group-hover:border-zinc-100 group-hover:text-white relative z-20 transition-all duration-700",
         className
       )}
     >
@@ -88,7 +92,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "group-hover:text-black text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-1000",
+        "text-black group-hover:text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-700",
         className
       )}
     >
@@ -106,7 +110,46 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 group-hover:text-black text-white tracking-wide leading-relaxed text-md transition-all duration-1000",
+        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+
+export const CardTechStack = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        className
+      )}
+    >
+      <span className="font-bold">Tech Stack: </span>
+      {children}
+    </p>
+  );
+};
+
+export const CardTime = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-1 text-black group-hover:text-stone-400 tracking-wide leading-relaxed text-sm transition-all duration-700",
         className
       )}
     >

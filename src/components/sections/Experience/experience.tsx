@@ -1,6 +1,6 @@
-import { HoverEffect } from "@/components/ui/experience-card-group";
 import Title from "@/components/ui/title";
 import { experiences } from "../../../../public/data/experiences/experience";
+import { HoverEffect } from "./experience-card-group";
 
 export default function Experience() {
   return (

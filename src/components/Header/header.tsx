@@ -32,7 +32,7 @@ export default function Header() {
           particleColor="#99ccc1"
         />
       </div>
-      <div className="w-full h-5/6 px-60 flex justify-center items-center">
+      <div className="w-full h-full px-60 flex justify-center items-center">
         <div className="w-full">
           <div className="w-full pb-4 flex border-b-2 border-black justify-between">
             <div className="border-2 border-black px-4 py-2">
@@ -61,6 +61,7 @@ export default function Header() {
             {"  "}
             <FontAwesomeIcon icon={faSmileWink} className="text-teal-500" />
           </div>
+          <div className=" h-24"></div>
         </div>
       </div>
       <div className="bottom-10 absolute left-1/2">

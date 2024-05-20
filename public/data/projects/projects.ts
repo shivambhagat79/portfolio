@@ -1,5 +1,3 @@
-import { time } from "console";
-
 export const projects = [
   {
     title: "Stripe",

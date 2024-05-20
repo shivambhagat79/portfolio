@@ -1,0 +1,7 @@
+.bar {
+  transition: all 0.3s;
+}
+
+.skill-bar:hover .bar {
+  height: 10px;
+}

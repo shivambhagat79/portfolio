@@ -1,5 +1,7 @@
 import { Major_Mono_Display } from "next/font/google";
 import Link from "./link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -15,12 +17,15 @@ export default function Navbar() {
         >
           Welcome
         </div>
-        <div className="nav-links hidden md:block">
+        <div className="nav-links hidden md:block transition-all">
           <Link url="/">Home</Link>
           <Link url="/about">About</Link>
           <Link url="/for_fun">For Fun</Link>
           <Link url="/resume">Resume</Link>
         </div>
+        <button className="md:hidden transition-all border-2 border-black aspect-square p-3 flex justify-center items-center hover:p-2 hover:text-white hover:bg-black">
+          <FontAwesomeIcon icon={faBars} />
+        </button>
       </div>
     </nav>
   );

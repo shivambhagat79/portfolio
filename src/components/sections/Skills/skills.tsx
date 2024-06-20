@@ -1,6 +1,6 @@
 import Title from "@/components/ui/title";
 import { SkillBar } from "./skillBar";
-import { skills } from "/public/data/skills/skills";
+import { skills } from "../../../../public/data/skills/skills";
 
 export default function Skills() {
   return (

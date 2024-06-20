@@ -20,11 +20,11 @@ export default function Navbar() {
     setNavOpen(!navOpen);
   }
 
-  if (navOpen) {
-    document.body.classList.add("overflow-y-hidden");
-  } else {
-    document.body.classList.remove("overflow-y-hidden");
-  }
+  // if (navOpen) {
+  //   document.body.classList.add("overflow-y-hidden");
+  // } else {
+  //   document.body.classList.remove("overflow-y-hidden");
+  // }
 
   return (
     <>

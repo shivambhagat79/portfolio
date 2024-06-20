@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { cn } from "@/utils/cn";
+import { useEffect } from "react";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -20,11 +21,13 @@ export default function Navbar() {
     setNavOpen(!navOpen);
   }
 
-  // if (navOpen) {
-  //   document.body.classList.add("overflow-y-hidden");
-  // } else {
-  //   document.body.classList.remove("overflow-y-hidden");
-  // }
+  useEffect(function mount() {
+    if (navOpen) {
+      document.body.classList.add("overflow-y-hidden");
+    } else {
+      document.body.classList.remove("overflow-y-hidden");
+    }
+  });
 
   return (
     <>

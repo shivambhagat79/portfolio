@@ -8,8 +8,10 @@ const major_mono = Major_Mono_Display({
 
 export default function Title({ title }: { title: string }) {
   return (
-    <div className="border-b-2 border-black py-6 px-60">
-      <h1 className={cn(major_mono.className, "text-center text-5xl")}>
+    <div className="border-b-2 border-black py-3 md:py-6 ">
+      <h1
+        className={cn(major_mono.className, "text-center text-2xl md:text-5xl")}
+      >
         {title}
       </h1>
     </div>

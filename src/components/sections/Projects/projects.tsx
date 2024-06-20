@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <div className="border-b-2 border-black">
       <Title title="My Projects" />
-      <div className="px-20">
+      <div className="px-20 py-20">
         <HoverEffect items={projects} />
       </div>
     </div>

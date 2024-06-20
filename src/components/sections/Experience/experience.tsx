@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <>
       <Title title="My Experiences" />
-      <div className="px-20">
+      <div className=" px-20 py-20">
         <HoverEffect items={experiences} />
       </div>
     </>

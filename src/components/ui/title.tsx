@@ -10,7 +10,7 @@ export default function Title({ title }: { title: string }) {
   return (
     <div className="border-b-2 border-black py-3 md:py-6 ">
       <h1
-        className={cn(major_mono.className, "text-center text-2xl md:text-5xl")}
+        className={cn(major_mono.className, "text-center text-3xl md:text-5xl")}
       >
         {title}
       </h1>

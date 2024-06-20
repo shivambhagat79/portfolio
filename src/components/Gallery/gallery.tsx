@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import Title from "../ui/title";
+import Image from "next/image";
 
 export default function Gallery() {
   const img_no = 11;
@@ -11,7 +12,7 @@ export default function Gallery() {
           <div
             key={i}
             className={cn(
-              "rounded-2xl aspect-square overflow-hidden",
+              "rounded-2xl aspect-square overflow-hidden relative",
               i == 2
                 ? "row-span-2 col-span-2 aspect-[1/1] md:row-span-2 md:col-span-1 md:aspect-[1/2] lg:row-span-1 lg:col-span-1 lg:aspect-[1/1]"
                 : "",
@@ -28,10 +29,12 @@ export default function Gallery() {
               i == 9 ? "lg:col-span-2 lg:aspect-[2/1]" : ""
             )}
           >
-            <img
+            <Image
               src={`/img/gallery/gallery_${i + 1}.jpg`}
               alt={`Image ${i + 1}`}
-              className="rounded-2xl w-full h-full object-cover overflow-hidden transition-all transform hover:scale-90 border-4 border-white "
+              layout="fill"
+              objectFit="cover"
+              className="rounded-2xl overflow-hidden transition-all transform hover:scale-90 border-4 border-stone-100 "
             />
           </div>
         ))}

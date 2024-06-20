@@ -25,9 +25,10 @@ export default function Header() {
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
-          minSize={1}
-          maxSize={5}
-          particleDensity={10}
+          minSize={20}
+          maxSize={200}
+          speed={0.5}
+          particleDensity={2}
           className="w-full h-full"
           particleColor="#99ccc1"
         />

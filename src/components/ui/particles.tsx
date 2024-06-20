@@ -239,7 +239,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               opacity: {
                 value: {
                   min: 0.1,
-                  max: 1,
+                  max: 0.5,
                 },
                 animation: {
                   count: 0,
@@ -403,7 +403,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
                 consent: false,
                 distance: 200,
-                enable: true,
+                enable: false,
                 frequency: 1,
                 opacity: 1,
                 shadow: {

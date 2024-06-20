@@ -31,7 +31,6 @@ export default function Gallery() {
             )}
           >
             <Image
-              // src={`/img/gallery/gallery_${i + 1}.jpg`}
               src={images[i]}
               alt={`Image ${i + 1}`}
               layout="fill"

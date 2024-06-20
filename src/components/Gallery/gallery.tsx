@@ -1,6 +1,7 @@
 import { cn } from "@/utils/cn";
 import Title from "../ui/title";
 import Image from "next/image";
+import images from "../../../public/data/gallery/images";
 
 export default function Gallery() {
   const img_no = 11;
@@ -30,7 +31,8 @@ export default function Gallery() {
             )}
           >
             <Image
-              src={`/img/gallery/gallery_${i + 1}.jpg`}
+              // src={`/img/gallery/gallery_${i + 1}.jpg`}
+              src={images[i]}
               alt={`Image ${i + 1}`}
               layout="fill"
               objectFit="cover"

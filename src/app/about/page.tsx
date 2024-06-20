@@ -13,24 +13,26 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <div className="px-96 py-10 grid grid-cols-2">
-        <div className="w-96 h-96 border-2 border-teal-900 shadow-[12px_12px_#064e3b] my-8 hover:shadow-none transition-all">
-          <Image
-            className="grayscale hover:grayscale-0 transition-all duration-1000"
-            src={profile}
-            alt=""
-          />
+      <div className="px-5   md:px-32  py-10 grid grid-cols-1 lg:grid-cols-2">
+        <div className="w-full h-full flex justify-center ">
+          <div className=" w-80 h-80 md:w-96 md:h-96 border-2 border-teal-900 shadow-[12px_12px_#064e3b] my-8 hover:shadow-none transition-all">
+            <Image
+              className="grayscale hover:grayscale-0 transition-all duration-1000"
+              src={profile}
+              alt=""
+            />
+          </div>
         </div>
         <div className="my-8 w">
           <h1
             className={cn(
               major_mono.className,
-              "text-4xl text-white bg-black px-4 py-2 inline-block"
+              "text-2xl md:text-4xl text-white bg-black px-4 py-2 inline-block"
             )}
           >
             About Me
           </h1>
-          <div className="text-stone-700 text-lg grid grid-rows-3 gap-5 mt-5">
+          <div className="text-stone-700 text-sm md:text-base lg:text-lg grid grid-rows-3 gap-5 mt-5">
             <p>
               About Me Hi there! Im Wenjing. Im an interdisciplinary designer
               with background in UX design, creative technology and business. I

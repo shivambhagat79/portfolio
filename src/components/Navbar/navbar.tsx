@@ -20,11 +20,11 @@ export default function Navbar() {
     setNavOpen(!navOpen);
   }
 
-  // if (navOpen) {
-  //   document.body.classList.add("overflow-y-hidden");
-  // } else {
-  //   document.body.classList.remove("overflow-y-hidden");
-  // }
+  if (navOpen) {
+    document.body.classList.add("overflow-y-hidden");
+  } else {
+    document.body.classList.remove("overflow-y-hidden");
+  }
 
   return (
     <>
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="flex flex-col items-center justify-center h-full">
           <Link
             href="/"
-            className="text-4xl my-7 hover:-translate-y-2 transition-all hover:text-teal-900"
+            className="text-4xl mb-7 hover:-translate-y-2 transition-all hover:text-teal-900"
           >
             Home
           </Link>

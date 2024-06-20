@@ -18,10 +18,17 @@ export function SkillBar({
       {items.map((item) => (
         <div
           key={item.name}
-          className="skill-bar py-6 flex items-center hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="skill-bar py-6 md:flex md:items-center hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
-          <FontAwesomeIcon icon={faCircleDot} className="text-teal-700 me-2" />
-          <div className=" text-lg basis-[10%]">{item.name}</div>
+          <div className="flex items-center w-48 mb-2 md:mb-0">
+            <FontAwesomeIcon
+              icon={faCircleDot}
+              className="text-teal-700 me-2"
+            />
+            <div className="text-sm md:text-base xl:text-lg basis-[10%]">
+              {item.name}
+            </div>
+          </div>
           <div className="bar  w-full h-1 bg-teal-900/20">
             <div
               className="bar  h-full bg-gradient-to-r from-stone-900 via-teal-900 to-teal-500"

@@ -4,7 +4,7 @@ export const skills = [
     level: 7,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     level: 8,
   },
   {

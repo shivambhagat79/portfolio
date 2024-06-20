@@ -5,10 +5,7 @@ import React from "react";
 import { SparklesCore } from "@/components/ui/particles";
 import Navbar from "../Navbar/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSmileWink,
-  faAngleDoubleDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faSmileWink } from "@fortawesome/free-solid-svg-icons";
 import ArrowRight from "../Icons/arrowRIght";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 
@@ -67,12 +64,6 @@ export default function Header() {
           </div>
           <div className=" h-24"></div>
         </div>
-      </div>
-      <div className="bottom-10 absolute left-1/2">
-        <FontAwesomeIcon
-          icon={faAngleDoubleDown}
-          className="text-teal-700/80 text-2xl md:text-3xl xl:text-5xl"
-        />
       </div>
     </div>
   );

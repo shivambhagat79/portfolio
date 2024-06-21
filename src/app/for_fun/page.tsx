@@ -12,14 +12,18 @@ export default function ForFun() {
   return (
     <>
       <Navbar />
-      <div className="py-20 px-60 border-b-2 border-black">
-        <div className="grid grid-cols-2">
-          <div></div>
-          <div>
-            <h1 className={cn(major_mono.className, "text-4xl")}>
-              When I Am Not Working
+      <div className="px-5 py-10 md:px-20 xl:py-20 xl:px-48 border-b-2 border-black">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full flex justify-center">
+            <h1
+              className={cn(major_mono.className, "text-5xl lg:text-7xl mb-10")}
+            >
+              When I<br /> Am Not
+              <br /> Working
             </h1>
-            <p className="text-stone-700 text-lg mt-5">
+          </div>
+          <div>
+            <p className="text-stone-700 text-sm md:text-base xl:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
               assumenda. Ab quas hic eaque eligendi, quos fugiat optio, quidem
               corrupti repellat nihil omnis adipisci possimus asperiores iusto

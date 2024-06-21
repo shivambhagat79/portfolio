@@ -72,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "h-full w-full p-4 bg-stone-900 group-hover:bg-transparent overflow-hidden border-2 border-transparent group-hover:border-black group-hover:text-white relative z-20 transition-all duration-700",
+        "h-full w-full p-2 md:p-4 bg-stone-900 group-hover:bg-transparent overflow-hidden border-2 border-transparent group-hover:border-black group-hover:text-white relative z-20 transition-all duration-700",
         className
       )}
     >
@@ -92,7 +92,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "group-hover:text-black text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-700",
+        "group-hover:text-black text-teal-400 font-extrabold tracking-wide text-xl md:text-2xl transition-all duration-700",
         className
       )}
     >
@@ -111,7 +111,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 group-hover:text-black text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        "mt-4 group-hover:text-black text-white tracking-wide leading-relaxed text-sm md:text-md transition-all duration-700",
         className
       )}
     >
@@ -130,7 +130,7 @@ export const CardOrganisation = ({
   return (
     <p
       className={cn(
-        "mt-4 font-bold group-hover:text-black text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        "mt-4 font-bold group-hover:text-black text-white tracking-wide leading-relaxed text-sm md:text-md transition-all duration-700",
         className
       )}
     >
@@ -149,7 +149,7 @@ export const CardDuration = ({
   return (
     <p
       className={cn(
-        "mt-1 group-hover:text-black text-stone-400 tracking-wide leading-relaxed text-sm transition-all duration-700",
+        "mt-1 group-hover:text-black text-stone-400 tracking-wide leading-relaxed text-xs md:text-sm transition-all duration-700",
         className
       )}
     >

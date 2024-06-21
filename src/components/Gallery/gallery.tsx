@@ -35,6 +35,7 @@ export default function Gallery() {
               alt={`Image ${i + 1}`}
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
               className="rounded-2xl overflow-hidden transition-all transform hover:scale-90 border-4 border-stone-100 "
             />
           </div>

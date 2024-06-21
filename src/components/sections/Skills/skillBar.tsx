@@ -18,7 +18,7 @@ export function SkillBar({
       {items.map((item) => (
         <div
           key={item.name}
-          className="skill-bar py-6 md:flex md:items-center hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="skill-bar py-2 md:py-4 md:flex md:items-center hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           <div className="flex items-center w-48 mb-2 md:mb-0">
             <FontAwesomeIcon

@@ -72,7 +72,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "h-full w-full p-4 overflow-hidden border-2 border-black group-hover:border-zinc-100 group-hover:text-white relative z-20 transition-all duration-700",
+        "h-full w-full p-2 md:p-4 overflow-hidden border-2 border-black group-hover:border-zinc-100 group-hover:text-white relative z-20 transition-all duration-700",
         className
       )}
     >
@@ -92,7 +92,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-black group-hover:text-teal-400 font-extrabold tracking-wide mt-4 text-2xl transition-all duration-700",
+        "text-black group-hover:text-teal-400 font-extrabold tracking-wide  text-xl md:text-2xl transition-all duration-700",
         className
       )}
     >
@@ -110,7 +110,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-sm md:text-md transition-all duration-700",
         className
       )}
     >
@@ -129,7 +129,7 @@ export const CardTechStack = ({
   return (
     <p
       className={cn(
-        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-md transition-all duration-700",
+        "mt-4 text-black group-hover:text-white tracking-wide leading-relaxed text-sm md:text-base transition-all duration-700",
         className
       )}
     >
@@ -149,7 +149,7 @@ export const CardTime = ({
   return (
     <p
       className={cn(
-        "mt-1 text-black group-hover:text-stone-400 tracking-wide leading-relaxed text-sm transition-all duration-700",
+        "mt-1 text-black group-hover:text-stone-400 tracking-wide leading-relaxed text-xs md:text-sm transition-all duration-700",
         className
       )}
     >

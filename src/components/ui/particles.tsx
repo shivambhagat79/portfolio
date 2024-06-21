@@ -268,8 +268,12 @@ export const SparklesCore = (props: ParticlesProps) => {
               shape: {
                 close: true,
                 fill: true,
-                options: {},
-                type: "circle",
+                options: {
+                  polygon: {
+                    sides: 6,
+                  },
+                },
+                type: "polygon",
               },
               size: {
                 value: {
@@ -372,13 +376,13 @@ export const SparklesCore = (props: ParticlesProps) => {
               rotate: {
                 value: 0,
                 animation: {
-                  enable: false,
-                  speed: 0,
+                  enable: true,
+                  speed: 1,
                   decay: 0,
                   sync: false,
                 },
-                direction: "clockwise",
-                path: false,
+                direction: "random",
+                path: true,
               },
               orbit: {
                 animation: {

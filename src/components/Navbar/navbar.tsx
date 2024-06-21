@@ -63,7 +63,7 @@ export default function Navbar() {
       </nav>
       <div
         className={cn(
-          "h-0 w-screen transition-all duration-500 overflow-hidden absolute ",
+          "h-0 w-screen transition-all duration-500 overflow-hidden absolute z-50",
           navOpen ? "h-screen bg-blur" : ""
         )}
       >

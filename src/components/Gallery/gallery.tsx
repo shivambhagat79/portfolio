@@ -2,6 +2,7 @@ import { cn } from "@/utils/cn";
 import Title from "../ui/title";
 import Image from "next/image";
 import images from "../../../public/data/gallery/images";
+import Link from "next/link";
 
 export default function Gallery() {
   const img_no = 11;
@@ -30,14 +31,16 @@ export default function Gallery() {
               i == 9 ? "lg:col-span-2 lg:aspect-[2/1]" : ""
             )}
           >
-            <Image
-              src={images[i]}
-              alt={`Image ${i + 1}`}
-              layout="fill"
-              objectFit="cover"
-              placeholder="blur"
-              className="rounded-2xl overflow-hidden transition-all transform hover:scale-90 border-4 border-stone-100 "
-            />
+            <Link href={images[i].src} target="_blank">
+              <Image
+                src={images[i]}
+                alt={`Image ${i + 1}`}
+                layout="fill"
+                objectFit="cover"
+                placeholder="blur"
+                className="rounded-2xl overflow-hidden transition-all transform md:hover:scale-90 border-4 border-stone-100 "
+              />
+            </Link>
           </div>
         ))}
       </div>

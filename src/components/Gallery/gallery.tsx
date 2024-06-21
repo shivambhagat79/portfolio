@@ -31,7 +31,10 @@ export default function Gallery() {
               i == 9 ? "lg:col-span-2 lg:aspect-[2/1]" : ""
             )}
           >
-            <Link href={images[i].src} target="_blank">
+            <Link
+              href={images[i].src.replace("portfolio/", "")}
+              target="_blank"
+            >
               <Image
                 src={images[i]}
                 alt={`Image ${i + 1}`}

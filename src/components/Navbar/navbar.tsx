@@ -8,6 +8,7 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { cn } from "@/utils/cn";
 import { useEffect } from "react";
+import "./navbar.css";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function Navbar() {
       <nav
         className={cn(
           "w-screen border-b-2 border-black px-5 lg:px-30 xl:px-60 py-2 z-50 transition-all duration-500",
-          navOpen ? " backdrop-blur-2xl" : ""
+          navOpen ? " bg-blur" : ""
         )}
       >
         <div className="flex justify-between items-center">
@@ -62,8 +63,8 @@ export default function Navbar() {
       </nav>
       <div
         className={cn(
-          "h-0 w-screen transition-all duration-500 overflow-hidden absolute",
-          navOpen ? " h-screen backdrop-blur-2xl" : ""
+          "h-0 w-screen transition-all duration-500 overflow-hidden absolute ",
+          navOpen ? "h-screen bg-blur" : ""
         )}
       >
         <div className="flex flex-col items-center justify-center h-full">

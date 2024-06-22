@@ -1,22 +1,26 @@
 export const skills = [
   {
+    name: "C/C++",
+    level: 9,
+  },
+  {
+    name: "JavaScript",
+    level: 7,
+  },
+  {
+    name: "TypeScript",
+    level: 6,
+  },
+  {
     name: "React",
     level: 7,
   },
   {
     name: "Tailwind",
-    level: 8,
+    level: 9,
   },
   {
     name: "Next.js",
-    level: 7,
-  },
-  {
-    name: "JavaScript",
-    level: 8,
-  },
-  {
-    name: "TypeScript",
     level: 7,
   },
   {
@@ -25,7 +29,7 @@ export const skills = [
   },
   {
     name: "CSS",
-    level: 9,
+    level: 8,
   },
   {
     name: "Node.js",
@@ -37,14 +41,14 @@ export const skills = [
   },
   {
     name: "MongoDB",
-    level: 6,
-  },
-  {
-    name: "Firebase",
     level: 7,
   },
   {
     name: "Git",
-    level: 8,
+    level: 7,
+  },
+  {
+    name: "Python",
+    level: 5,
   },
 ];

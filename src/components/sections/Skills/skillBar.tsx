@@ -25,9 +25,7 @@ export function SkillBar({
               icon={faCircleDot}
               className="text-teal-700 me-2"
             />
-            <div className="text-sm md:text-base xl:text-lg basis-[10%]">
-              {item.name}
-            </div>
+            <div className="text-sm md:text-base xl:text-lg ">{item.name}</div>
           </div>
           <div className="bar  w-full h-1 bg-teal-900/20">
             <div

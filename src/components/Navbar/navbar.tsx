@@ -9,6 +9,7 @@ import { useState } from "react";
 import { cn } from "@/utils/cn";
 import { useEffect } from "react";
 import "./navbar.css";
+import resume from "../../../public/pdf/resume.pdf";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],
@@ -48,7 +49,9 @@ export default function Navbar() {
             <NavLink url="/">Home</NavLink>
             <NavLink url="/about">About</NavLink>
             <NavLink url="/for_fun">For Fun</NavLink>
-            <NavLink url="/resume">Resume</NavLink>
+            <NavLink url="https://drive.google.com/file/d/1Qp5I0zN6eE4iV3hs1UK4AzWtNQVPEhfN/view?usp=sharing">
+              Resume
+            </NavLink>
           </div>
           <button
             className="md:hidden transition-all border-2 border-black aspect-square p-3 flex justify-center items-center hover:p-[0.7rem] hover:text-white hover:bg-black"
@@ -87,7 +90,7 @@ export default function Navbar() {
             For Fun
           </Link>
           <Link
-            href="/resume"
+            href="https://drive.google.com/file/d/1Qp5I0zN6eE4iV3hs1UK4AzWtNQVPEhfN/view?usp=sharing"
             className="text-4xl my-7 hover:-translate-y-2 transition-all hover:text-teal-900"
           >
             Resume

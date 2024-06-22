@@ -53,15 +53,16 @@ export default function ForFun() {
           </div>
           <div>
             <p className="text-stone-700 text-sm md:text-base xl:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              assumenda. Ab quas hic eaque eligendi, quos fugiat optio, quidem
-              corrupti repellat nihil omnis adipisci possimus asperiores iusto
-              nostrum molestias ullam rem quo totam quibusdam quod sequi! Eaque
-              quaerat voluptatem obcaecati? Omnis molestiae delectus
-              consequuntur at, quae quaerat ipsum alias expedita quia aperiam
-              distinctio dolores odio! Perspiciatis earum, maxime numquam
-              inventore ipsum, sunt veritatis distinctio tempore voluptas a
-              dignissimos quos recusandae similique quas.
+              Whenever I find myself tired at the end of a long day, or I shut
+              my textbooks with a sigh, the world melts away. My stress fades as
+              I pull out my paints and brushes, or sharpen a pencil to a perfect
+              point. There&apos;s something truly magical about starting with a
+              blank canvas or sheet of paper. It&apos;s a portal to a different
+              world, where I can capture a fleeting moment in sunlight,
+              translate a feeling into vibrant colors, or breathe life into a
+              fantastical creature. It&apos;s pure joy, and in that creative
+              space, I lose myself for hours, completely absorbed in the process
+              of making something beautiful.
             </p>
           </div>
         </div>

@@ -64,25 +64,33 @@ export default function About() {
           </h1>
           <div className="text-stone-700 text-sm md:text-base lg:text-lg grid grid-rows-3 gap-5 mt-5">
             <p>
-              About Me Hi there! Im Wenjing. Im an interdisciplinary designer
-              with background in UX design, creative technology and business. I
-              research, design, and sometimes code. Im inspired by community and
-              care about equality. I hope to use design as an instrument to help
-              foster a healthy and sustainable culture for our society.
+              Hi there! I&apos;m Shivam. I&apos;m a Computer Science student at
+              IIT Ropar, deeply fascinated by the world of full-stack
+              development. Building applications from scratch, from the user
+              interface to the complex backend logic, brings me immense
+              satisfaction. I love the challenge of problem-solving and the
+              thrill of seeing my code come to life as a functioning program.
+              Whether it's crafting a user-friendly interface or tackling
+              intricate back-end tasks, I'm always eager to learn new
+              technologies and push my coding boundaries.
             </p>
             <p>
-              During daytime, I apply my hybrid skillset to design digital
-              experiences for people and solve right problems. In my spare time,
-              I create experimental experiences that pose questions. I also love
-              wasting time waiting for the next surf on the sea (I was born in a
-              tropical island :) and growing plants.
+              Beyond the realm of code, I find solace and expression in the
+              arts. Painting and sketching are my go-to creative outlets.
+              There's a magic in creating something beautiful from a blank
+              canvas, be it capturing a fleeting moment in nature with
+              watercolors or bringing a fantastical creature to life with
+              detailed pen strokes. Immersing myself in the world of colors and
+              textures allows me to unwind and explore different creative
+              avenues.
             </p>
             <p>
-              I hold a Masters degree from the Interactive Telecommunications
-              Program (ITP) at Tisch, NYU, and a BBA degree in Marketing from
-              City University of Hong Kong. I previously interned at Apple App
-              Solutions team. I also designed some cool things at Legato
-              Technologies, a boutique digital agency.
+              When I'm not coding or creating art, you might find me exploring
+              the culinary world. Food, for me, is more than just sustenance –
+              it's a journey of discovery. From trying new cuisines to
+              experimenting in the kitchen, I savor the process of creating and
+              enjoying delicious meals. Who knows, maybe someday my coding
+              skills will come in handy for developing a revolutionary food app!
             </p>
           </div>
         </div>

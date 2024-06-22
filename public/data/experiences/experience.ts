@@ -1,51 +1,44 @@
 export const experiences = [
   {
-    title: "Stripe",
+    title: "Internship Coordinator",
     organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    duration: "May 2024 - Present",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-
-    link: "https://stripe.com",
+      "Worked as the Internship Head for The placement cell of IIT Ropar. Managed the internship process for the students of IIT Ropar.",
   },
   {
-    title: "Netflix",
-    organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    title: "Student Mentor",
+    organisation: "ISMP, IIT Ropar",
+    duration: "August 2022 - Present",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Mentored a group of 8 students in their academic and personal growth. Helped them in their academics and guided them in their career path.",
   },
   {
-    title: "Google",
+    title: "Student Coordinator",
     organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    duration: "August 2023 - May 2024",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Worked as a Studnet Point of Contact for The placement cell of IIT Ropar.",
   },
   {
-    title: "Meta",
-    organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    title: "Software Club Co-ordinator",
+    organisation: "SoftCom, IIT Ropar",
+    duration: "August 2023 - may 2024",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Managed the Software Club of IIT Ropar. Organised various events and workshops for the students.",
   },
   {
-    title: "Amazon",
-    organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    title: "Event Head",
+    organisation: "Zeitgeist, IIT Ropar",
+    duration: "Zeitgeist 2023",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Organised the annual cultural fest of IIT Ropar. Managed a team of 10 students and organised two events.",
   },
   {
-    title: "Microsoft",
-    organisation: "CDPC, IIT Ropar",
-    duration: "May 2021 - Present",
+    title: "Tech-Team Member",
+    organisation: "Student Council, IIT Ropar",
+    duration: "June 2023 - May 2024",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Built thr official website of the Sports Board of IIT Ropar. Managed the technical aspects of the council.",
   },
 ];

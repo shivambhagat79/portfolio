@@ -70,14 +70,14 @@ export default function About() {
               interface to the complex backend logic, brings me immense
               satisfaction. I love the challenge of problem-solving and the
               thrill of seeing my code come to life as a functioning program.
-              Whether it's crafting a user-friendly interface or tackling
-              intricate back-end tasks, I'm always eager to learn new
+              Whether it&apos;s crafting a user-friendly interface or tackling
+              intricate back-end tasks, I&apos;m always eager to learn new
               technologies and push my coding boundaries.
             </p>
             <p>
               Beyond the realm of code, I find solace and expression in the
               arts. Painting and sketching are my go-to creative outlets.
-              There's a magic in creating something beautiful from a blank
+              There&apos;s a magic in creating something beautiful from a blank
               canvas, be it capturing a fleeting moment in nature with
               watercolors or bringing a fantastical creature to life with
               detailed pen strokes. Immersing myself in the world of colors and
@@ -85,12 +85,13 @@ export default function About() {
               avenues.
             </p>
             <p>
-              When I'm not coding or creating art, you might find me exploring
-              the culinary world. Food, for me, is more than just sustenance –
-              it's a journey of discovery. From trying new cuisines to
-              experimenting in the kitchen, I savor the process of creating and
-              enjoying delicious meals. Who knows, maybe someday my coding
-              skills will come in handy for developing a revolutionary food app!
+              When I&apos;m not coding or creating art, you might find me
+              exploring the culinary world. Food, for me, is more than just
+              sustenance – it&apos;s a journey of discovery. From trying new
+              cuisines to experimenting in the kitchen, I savor the process of
+              creating and enjoying delicious meals. Who knows, maybe someday my
+              coding skills will come in handy for developing a revolutionary
+              food app!
             </p>
           </div>
         </div>

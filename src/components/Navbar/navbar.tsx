@@ -9,7 +9,6 @@ import { useState } from "react";
 import { cn } from "@/utils/cn";
 import { useEffect } from "react";
 import "./navbar.css";
-import resume from "../../../public/pdf/resume.pdf";
 
 const major_mono = Major_Mono_Display({
   subsets: ["latin"],

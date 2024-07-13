@@ -45,6 +45,6 @@ export const projects = [
     techStack: "NextJs, Express, MongoDB, NodeJS, Tailwind, AceternityUI",
     description:
       "A real-time chat application with multiple rooms and user authentication.",
-    link: "",
+    link: "https://github.com/shivambhagat79/Buzz",
   },
 ];

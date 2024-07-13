@@ -48,7 +48,7 @@ export default function Navbar() {
             <NavLink url="/">Home</NavLink>
             <NavLink url="/about">About</NavLink>
             <NavLink url="/for_fun">For Fun</NavLink>
-            <NavLink url="https://drive.google.com/file/d/1Qp5I0zN6eE4iV3hs1UK4AzWtNQVPEhfN/view?usp=sharing">
+            <NavLink url="https://drive.google.com/file/d/1OHBP4K2Hwfa0NFIQmOMRc0bkpAP2LLH7/view?usp=sharing">
               Resume
             </NavLink>
           </div>
